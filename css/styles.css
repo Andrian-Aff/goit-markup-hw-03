@@ -15,6 +15,15 @@ body {
   font-family: var(--main-font);
   color: var(--main-color);
 }
+
+/* CONTAINER */
+.container {
+  width: 1200рх;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /*===============HEADER======================*/
 
 .logo {
@@ -25,18 +34,37 @@ body {
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-right: 92px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+}
+
+.address-list-header {
+  display: flex;
 }
 
 .top-logo {
   color: var(--logo-top-color);
 }
 
-.navigation-link {
+.navigation-list-item > .navigation-link:not(last) {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: 50px;
 }
 .navigation-link:hover,
 .navigation-link:focus {
@@ -49,6 +77,8 @@ body {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--description-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts-link:hover,
@@ -66,26 +96,27 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.5;
-  /* or 136% */
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-color-text);
-}
+  
 
 .modal-btn {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  /* identical to box height, or 187% */
   display: flex;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   color: var(--accent-color-text);
   background-color: var(--accent-color);
+  padding: 10, 32;
+  padding-bottom: 200;
 }
+
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
