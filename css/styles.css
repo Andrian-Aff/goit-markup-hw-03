@@ -169,20 +169,21 @@ body {
 .hero-section {
   background-color: var(--sections-backgroud-color);
   min-height: 600px;
+  padding: 200px 252px;
   text-align: center;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.5;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
   color: var(--accent-color-text);
   margin-bottom: 30px;
 }
 
 .modal-btn {
+  display: inline-block;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -203,6 +204,7 @@ body {
 .modal-btn:focus {
   background-color: var(--modal-hover-color);
   border: 0 solid transparent;
+  cursor: pointer;
 }
 
 /*===============END HERO======================*/
@@ -372,14 +374,45 @@ body {
 .portfolio-main {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-left: -30px;
 }
 
-.project-wrapper {
+.projects-set {
   display: flex;
   flex-wrap: wrap;
 }
 
+.projects-set > .progect-list-item {
+  width: 370px;
+  height: 404px;
+  border: 1px solid var(--border-color-projects);
+  flex-basis: calc(100% / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.progect-list-item:nth-child(3n) {
+  margin-left: 0;
+}
+
+.progect-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.roject-link {
+  display: block;
+  width: 370px;
+  height: 404px;
+}
+
+.project-img {
+  margin-bottom: 20px;
+}
+
 .progect-title {
+  margin-bottom: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -387,13 +420,9 @@ body {
   color: var(--main-color);
 }
 
-.progect-list-item {
-  margin-right: 30px;
-  border: 1px solid var(--border-color-projects);
-  box-sizing: border-box;
-}
-
 .progect-type {
+  margin-left: 24px;
+  margin-right: 24px;
   font-size: 16px;
   line-height: 2.25x;
   letter-spacing: 0.03em;
