@@ -389,8 +389,13 @@ body {
   margin-right: 30px;
   min-height: 404px;
   max-width: 370px;
-  border: 1px solid var(--border-color-projects);
   margin-bottom: 30px;
+}
+
+.project-description {
+  border: 1px solid var(--border-color-projects);
+  border-top: none;
+  padding-bottom: 20px;
 }
 
 .progect-list-item:nth-child(3n) {
