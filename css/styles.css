@@ -80,6 +80,9 @@ body {
 }
 
 /*===============HEADER======================*/
+.header-wrepper {
+  display: flex;
+}
 
 .logo {
   font-family: var(--secondary-font);
@@ -89,11 +92,7 @@ body {
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--accent-color);
-}
-
-.navigation-list {
-  display: flex;
-  align-items: center;
+  margin-right: 92px;
 }
 
 .navigation {
@@ -102,13 +101,14 @@ body {
 
 .address-list-header {
   display: flex;
+  margin-left: auto;
 }
 
 .top-logo {
   color: var(--logo-top-color);
 }
 
-.navigation-list-item > .navigation-link:not(last) {
+.navigation-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
@@ -116,8 +116,13 @@ body {
   color: var(--main-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-left: 50px;
+  margin-right: 50px;
 }
+
+.contacts-link:not(:last-child) {
+  margin-right: 50px;
+}
+
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-color);
