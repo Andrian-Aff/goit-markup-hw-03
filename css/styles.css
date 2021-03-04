@@ -99,6 +99,14 @@ body {
   display: flex;
 }
 
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-list {
+  display: flex;
+}
+
 .address-list-header {
   display: flex;
   margin-left: auto;
@@ -118,7 +126,7 @@ body {
   padding-bottom: 32px;
 }
 
-.contacts-link:not(:last-child) {
+.contacts-list-item:not(:last-child) {
   margin-right: 50px;
 }
 
