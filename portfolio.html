@@ -18,54 +18,58 @@
     </head>
 
     <body>
-        <!-- header section -->
+        <!-- header section --> 
         <header class="header">
-            <nav class="navigation">
-                <a class="logo link" lang="en" href="#top-logo.">Web<span class="top-logo">Studio</span></a>
-                <ul class="navigation-list list">
-                    <li class="navigation-list-item">
-                        <a class="navigation-link link" href="./index.html">Студия</a>
+            <div class="container">
+                <nav class="navigation">
+                    <a class="logo link" id="top-logo" lang="en" href="#top-logo">Web<span class="top-logo">Studio</span></a>
+                    <ul class="navigation-list list">
+                        <li class="navigation-list-item">
+                            <a class="footer-address link current" href="./index.html">Студия</a>
+                        </li>
+                        <li class="navigation-list-item">
+                            <a class="navigation-link link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="navigation-list-item">
+                            <a class="navigation-link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <ul class="address-list-header list">
+                    <li class="contacts-list-item">
+                        <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-link link current" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-link link" href="">Контакты</a>
+                    <li class="contacts-list-item">
+                        <a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </nav>
-        
-            <ul class="list">
-                <li class="address-list-item">
-                    <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="address-list-item">
-                    <a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-            </ul>
+            </div>
         </header>
 
         <main>
             <!-- portfolio navigation -->
             <section>
-                <h1 class="hidden">Portfolio-projects</h1>
-                <ul class="list list-portfolio">
-                    <li class="portfolio-list-item">
-                        <button class="btm-portfolio" type="button">Все</button>
-                    </li>
-                    <li class="portfolio-list-item">
-                        <button class="btm-portfolio" type="button">Веб-сайты</button>
-                    </li>
-                    <li class="portfolio-list-item">
-                        <button class="btm-portfolio" type="button">Приложения</button>
-                    </li>
-                    <li class="portfolio-list-item">
-                        <button class="btm-portfolio" type="button">Дизайн</uotton>
-                    </li>
-                    <li class="portfolio-list-item">
-                        <button class="btm-portfolio" type="button">Маркетинг</button>
-                    </li>
-                </ul>
+                <div class="container">
+                    <h1 class="hidden">Portfolio-projects</h1>
+                    <ul class="list list-portfolio">
+                        <li class="portfolio-list-item">
+                            <button class="btm-portfolio" type="button">Все</button>
+                        </li>
+                        <li class="portfolio-list-item">
+                            <button class="btm-portfolio" type="button">Веб-сайты</button>
+                        </li>
+                        <li class="portfolio-list-item">
+                            <button class="btm-portfolio" type="button">Приложения</button>
+                        </li>
+                        <li class="portfolio-list-item">
+                            <button class="btm-portfolio" type="button">Дизайн</uotton>
+                        </li>
+                        <li class="portfolio-list-item">
+                            <button class="btm-portfolio" type="button">Маркетинг</button>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <!-- Projects  -->
@@ -138,8 +142,10 @@
             </section>
         </main>
 
-            <footer class="footer">
-                <a class="logo link" lang="en" href="#top-logo">Web<span class="bottom-logo">Studio</span></a>
+        <!-- footer section -->
+        <footer class="footer">
+            <div class="container">
+                <a class="logo-footer logo link" lang="en" href="#top-logo">Web<span class="bottom-logo">Studio</span></a>
                 <address class="address">
                     <ul class="list">
                         <li class="address-list-item">
@@ -151,10 +157,10 @@
                         <li class="address-list-item">
                             <a class="footer-link-address link" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
-                        
                     </ul>
                 </address>
-            </footer>
+            </div>
+        </footer>
     </body>
     
 </html>
