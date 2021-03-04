@@ -82,17 +82,20 @@ body {
 /*===============HEADER======================*/
 .header-wrepper {
   display: flex;
+  align-items: center;
 }
 
 .logo {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-right: 92px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-right: 92px;
 }
 
 .navigation {
@@ -117,13 +120,14 @@ body {
 }
 
 .navigation-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--main-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .contacts-list-item:not(:last-child) {
@@ -136,6 +140,7 @@ body {
 }
 
 .contacts-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
@@ -197,7 +202,6 @@ body {
 /*===============FEATURE SECTION==========================*/
 .features-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .features_list_item {
