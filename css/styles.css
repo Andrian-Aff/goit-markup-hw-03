@@ -1,3 +1,4 @@
+/*===============MAIN STYLES CSS======================*/
 :root {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -10,9 +11,10 @@
   --footer-link: rgba(255, 255, 255, 0.6);
   --logo-top-color: #000;
   --modal-hover-color: #188ce8;
+  --border-color-projects: #eeeeee;
+  --header-border-color: #ececec;
 }
 
-/*===============COMPONENTS======================*/
 h1,
 h2,
 h3,
@@ -46,10 +48,6 @@ img {
   font-style: normal;
 }
 
-.current {
-  color: var(--accent-color);
-}
-
 .hidden {
   display: none;
 }
@@ -69,7 +67,10 @@ body {
   margin-bottom: 50px;
 }
 
-/*===============END COMPONENTS======================*/
+.current {
+  color: var(--accent-color);
+}
+/*==============END MAIN STYLES CSS======================*/
 
 /* CONTAINER */
 .container {
@@ -80,16 +81,23 @@ body {
 }
 
 /*===============HEADER======================*/
+.header {
+  border: 1px solid var(--header-border-color);
+}
+
 .header-wrepper {
   display: flex;
   align-items: center;
 }
 
-.logo {
+.logo-header {
   display: block;
   margin-top: 24px;
   margin-bottom: 25px;
   margin-right: 92px;
+}
+
+.logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -200,14 +208,14 @@ body {
 /*===============END HERO======================*/
 
 /*===============FEATURE SECTION==========================*/
-.features-list {
-  display: flex;
-}
-
-.features_list_item {
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
   min-width: 270px;
+}
+
+.features-list {
+  display: flex;
 }
 
 .features_list_item:not(:last-child) {
@@ -233,6 +241,9 @@ body {
 /*===============END FEATURE SECTION======================*/
 
 /*===============SECTION OUR possibilities======================*/
+.our-possabilities {
+  padding-bottom: 94px;
+}
 .possibilities-list {
   display: flex;
   justify-content: space-between;
@@ -242,23 +253,24 @@ body {
   margin-left: 30px;
 }
 
-.possibilities-list-img {
-  padding-bottom: 94px;
-}
 /*===============END SECTION OUR possibilities======================*/
 
 /*===============SECTION OUR TEAM======================*/
-.our-team-list {
-  display: flex;
-  justify-content: space-between;
+.our-team {
+  background-color: var(--btn-background-portfolio);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.team-title {
-  padding-top: 94px;
+.our-team-list {
+  display: flex;
 }
 
 .team-list-item {
-  padding-bottom: 94px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--accent-color-text);
 }
 .team-list-item:not(:last-child) {
   margin-right: 30px;
@@ -296,6 +308,7 @@ body {
 }
 
 .logo-footer {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -323,7 +336,7 @@ body {
 }
 /*===============END FOOTER======================*/
 
-/*==================PORTFOLIO=======================*/
+/*==================PORTFOLIO NAVIGATION=======================*/
 
 .list-portfolio {
   display: flex;
@@ -353,6 +366,19 @@ body {
   margin-right: 8px;
 }
 
+/*==================END PORTFOLIO NAVIGATION=======================*/
+
+/*==================PORTFOLIO PROJECTS=======================*/
+.portfolio-main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .progect-title {
   font-weight: 700;
   font-size: 18px;
@@ -361,10 +387,32 @@ body {
   color: var(--main-color);
 }
 
+.progect-list-item {
+  margin-right: 30px;
+  border: 1px solid var(--border-color-projects);
+  box-sizing: border-box;
+}
+
 .progect-type {
   font-size: 16px;
   line-height: 2.25x;
   letter-spacing: 0.03em;
   color: var(--description-color);
 }
-/*==================END PORTFOLIO=======================*/
+/*==================END PORTFOLIO PROJECTS=======================*/
+
+/*===============COMPONENTS======================*/
+.sections-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-bottom: 50px;
+}
+
+.current {
+  color: var(--accent-color);
+}
+/*===============END COMPONENTS======================*/
