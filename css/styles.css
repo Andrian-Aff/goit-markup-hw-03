@@ -212,8 +212,7 @@ body {
 /*===============FEATURE SECTION==========================*/
 .features {
   padding-top: 94px;
-  padding-bottom: 94px;
-  min-width: 270px;
+  padding-bottom: 47px;
 }
 
 .features-list {
@@ -239,11 +238,13 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--description-color);
+  min-width: 270px;
 }
 /*===============END FEATURE SECTION======================*/
 
 /*===============SECTION OUR possibilities======================*/
 .our-possabilities {
+  padding-top: 47px;
   padding-bottom: 94px;
 }
 .possibilities-list {
@@ -375,7 +376,6 @@ body {
 .portfolio-main {
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-left: -30px;
 }
 
 .projects-set {
@@ -384,12 +384,17 @@ body {
   justify-content: space-between;
 }
 
-.projects-set > .progect-list-item {
-  width: calc(100% / 4-30px);
-  height: 404px;
+.progect-list-item {
+  flex-basis: calc((100%-60px) / 3);
+  margin-right: 30px;
+  min-height: 404px;
+  max-width: 370px;
   border: 1px solid var(--border-color-projects);
   margin-bottom: 30px;
-  flex-basis: calc(100%3-30);
+}
+
+.progect-list-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .progect-list-item:nth-last-child(-n + 3) {
