@@ -169,21 +169,26 @@ body {
 .hero-section {
   background-color: var(--sections-backgroud-color);
   min-height: 600px;
-  padding: 200px 252px;
+  width: 1600px;
+  padding-top: 199px;
+  padding-bottom: auto;
+  padding-left: auto;
   text-align: center;
 }
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--accent-color-text);
-  margin-bottom: 30px;
 }
 
 .modal-btn {
-  display: block;
+  display: inline-block;
+  margin: auto;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
