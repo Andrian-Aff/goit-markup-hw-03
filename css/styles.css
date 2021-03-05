@@ -23,6 +23,7 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -33,6 +34,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -78,6 +81,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0;
+  max-width: 1170px;
 }
 
 /*===============HEADER======================*/
@@ -171,8 +175,9 @@ body {
   min-height: 600px;
   width: 1600px;
   padding-top: 199px;
-  padding-bottom: auto;
-  padding-left: auto;
+  padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: 0;
   text-align: center;
 }
 .hero-title {
@@ -182,13 +187,13 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
   color: var(--accent-color-text);
 }
 
 .modal-btn {
   display: inline-block;
-  margin: auto;
+  min-width: 200px;
+  min-height: 50px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
