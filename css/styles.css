@@ -396,14 +396,11 @@ body {
 .projects-set {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .progect-list-item {
-  flex-basis: calc(100% / 1 -30px);
+  flex-basis: calc(100% / 3 - 30рх);
   margin-right: 30px;
-  max-width: 370px;
-  max-height: 404px;
   margin-bottom: 30px;
 }
 
