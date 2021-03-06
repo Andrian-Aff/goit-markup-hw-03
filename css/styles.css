@@ -108,9 +108,9 @@ body {
 
 .logo-header {
   display: block;
-  margin-top: 24px;
-  margin-bottom: 25px;
-  margin-right: 92px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-right: 92px;
 }
 
 .logo {
@@ -237,13 +237,16 @@ body {
 /*===============FEATURE SECTION==========================*/
 .features {
   padding-top: 94px;
-  padding-bottom: 47px;
+  padding-bottom: 94px;
 }
 
 .features-list {
   display: flex;
 }
 
+.features-title {
+  margin-bottom: 10px;
+}
 .features_list_item:not(:last-child) {
   margin-right: 30px;
 }
@@ -259,7 +262,6 @@ body {
 
 /*===============SECTION OUR possibilities======================*/
 .our-possabilities {
-  padding-top: 47px;
   padding-bottom: 94px;
 }
 .possibilities-list {
@@ -282,20 +284,21 @@ body {
 
 .our-team-list {
   display: flex;
+  margin-left: -30px;
 }
 
 .team-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--accent-color-text);
 }
-.team-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-list-img {
-  margin-bottom: 30px;
+.team-list-descriprion {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .members-name {
@@ -305,15 +308,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-color);
   margin-bottom: 10px;
-  text-align: center;
 }
+
 .members-position {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--description-color);
-  margin-bottom: 30px;
-  text-align: center;
 }
 /*===============END SECTION OUR TEAM======================*/
 
@@ -399,7 +400,7 @@ body {
 }
 
 .progect-list-item {
-  flex-basis: calc(100% / 3 - 30рх);
+  flex-basis: calc(100% / 3 - 30);
   margin-right: 30px;
   margin-bottom: 30px;
 }
